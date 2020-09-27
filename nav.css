@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    width: 500px;
+    background-color: #FF8C00;
+    padding: 24px 0px;
+    height: 100vh;
+    clip-path: circle(15% at 0% 0%);
+}
+
+nav ul.active {
+    clip-path: circle(100% at -45% 5%);
+}
+
+nav ul .menu {
+    width: 48px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+nav ul .menu span {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    padding: 2px;
+    width: 48px;
+    border-radius: 4px;
+}
+
+nav .menu span:nth-child(1) {
+    top: 0;
+}
+
+nav .menu span:nth-child(2) {
+    top: 18px;
+    width: 28px;
+}
+
+nav .menu span:nth-child(3) {
+    bottom: 0;
+    width: 40px;
+}
+
+nav ul.active .menu span:nth-child(1) {
+    top: 0;
+    left: 23px;
+    width: 4px;
+    height: 40px;
+}
+
+nav ul.active .menu span:nth-child(2) {
+    width: 40px;
+    left: 5px;
+}
+
+nav ul.active .menu span:nth-child(3) {
+    padding: 0;
+    width: 0;
+}
+
+nav ul.active .menu {
+    transform: rotateZ(45deg);
+}
+
+nav ul li {
+    padding: 24px 48px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li:hover {
+    background-color: #ff5100;
+    padding-left: 56px;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    margin: 0.5rem;
+}
+
+
+/* About us Page CSS */
+
+#headerTitle {
+    background: #000;
+    padding: 5rem 0;
+}
+
+#headerTitle #line {
+    border-radius: 5rem;
+    border: 0.12rem solid #ff5100;
+    width: 8rem;
+    margin: 1rem 0;
+}
+
+#headerTitle h1 {
+    letter-spacing: 1rem;
+}
+
+#aboutText {
+    background: #000;
+    color: #fff;
+}
+
+#Line2 {
+    border: 1px solid #999;
+    height: 20rem;
+    margin: 0px 1rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media i {
+    padding: 0px 10px;
+    font-size: 1.5rem;
+}
+
+.social-media i:hover {
+    color: #ff5100;
+}
+
+@media(max-width:766px) {
+    #Line2 {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+@media(max-width:476px) {
+    nav ul {
+        clip-path: circle(10% at 0% 0%);
+        left: -10px;
+    }
+    nav ul .menu span {
+        position: absolute;
+        left: 0;
+        background-color: white;
+        padding: 2px;
+        width: 20px;
+        border-radius: 4px;
+    }
+    nav .menu span:nth-child(1) {
+        top: -10px;
+        left: -10px;
+        width: 28px;
+    }
+    nav .menu span:nth-child(2) {
+        top: 0px;
+        width: 18px;
+        left: -10px;
+    }
+    nav ul.active .menu span:nth-child(1) {
+        top: 5px;
+        left: 8px;
+        width: 4px;
+        height: 30px;
+    }
+    nav ul.active .menu span:nth-child(2) {
+        width: 30px;
+        left: -5px;
+        top: 18px;
+    }
+    nav ul.active .menu span:nth-child(3) {
+        padding: 0;
+        width: 0;
+    }
+}
+
+
+/* #aboutLogoSide {} */
