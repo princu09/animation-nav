@@ -185,5 +185,66 @@ nav ul li:hover {
     }
 }
 
+@media(max-width:410px) {
+    nav ul.active {
+        clip-path: circle(90% at -45% 5%);
+    }
+    nav ul li {
+        padding: 10px 25px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+    }
+    nav ul li:hover {
+        background-color: #ff5100;
+        padding-left: 56px;
+        font-size: 0.8rem;
+        border-radius: 5rem;
+        margin: 0.05rem;
+    }
+}
 
-/* #aboutLogoSide {} */
+@media(max-width:344px) {
+    nav ul.active {
+        clip-path: circle(80% at -45% 5%);
+    }
+    nav ul li {
+        padding: 10px 25px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+    }
+    nav ul li:hover {
+        background-color: #ff5100;
+        padding-left: 56px;
+        font-size: 0.8rem;
+        border-radius: 5rem;
+        margin: 0.05rem;
+    }
+}
+
+@media(max-width:284px) {
+    nav ul.active {
+        clip-path: circle(70% at -45% 5%);
+    }
+    nav ul li {
+        padding: 10px 25px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+    }
+    nav ul li:hover {
+        background-color: #ff5100;
+        padding-left: 56px;
+        font-size: 0.8rem;
+        border-radius: 5rem;
+        margin: 0.05rem;
+    }
+}
+
+#footer {
+    color: #666;
+}
